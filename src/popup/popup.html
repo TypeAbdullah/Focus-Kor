@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Kor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="pixel-app">
+    <header class="app-header">
+      <div class="brand">
+        <svg class="brand-icon" viewBox="0 0 8 10" shape-rendering="crispEdges">
+          <rect x="0" y="0" width="8" height="2" fill="#56c4f7"/>
+          <rect x="0" y="0" width="2" height="10" fill="#56c4f7"/>
+          <rect x="0" y="4" width="6" height="2" fill="#56c4f7"/>
+        </svg>
+        <span class="brand-title">OCUS KOR</span>
+      </div>
+      <button type="button" class="mode-toggle off" id="modeToggle">
+        <span class="mode-indicator"></span>
+        <span class="mode-label" id="modeLabel">OFF</span>
+      </button>
+    </header>
+
+    <div class="add-section">
+      <div class="input-row">
+        <input type="text" id="siteInput" class="pixel-input" placeholder="domain.com" spellcheck="false" autocomplete="off">
+        <button type="button" id="addBtn" class="pixel-btn btn-add">+ ADD</button>
+      </div>
+      <button type="button" id="addCurrentBtn" class="pixel-btn btn-current">+ ADD CURRENT SITE</button>
+    </div>
+
+    <div class="list-section">
+      <div class="list-header">
+        <span class="list-title">ALLOWED</span>
+        <span class="list-count" id="listCount">0</span>
+      </div>
+      <div class="sites-container" id="sitesContainer">
+        <div class="empty-state" id="emptyState">ADD A WEBSITE FIRST THING TO START</div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
